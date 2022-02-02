@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Scrool List</title>
+</head>
+<body>
+    <div class="header"> 
+        <a href="top" class="head"><h1>Event List</h1></a>
+    </div>
+    <hr>
+    <br>
+    <%for(let i = 0;i<10;i++){%>
+    <div>
+        <h3><%=(multi*10)+(i+1)%></h3>
+        <h3>Item Name: <%=item[i]%></h3>
+        <h3>Owner Name: <%=name[i]%></h3>
+        <h3>End Date: 21/5/2022</h3>
+    </div>
+    <%}%>
+    <div >
+        <a href="#top" class="toTop">&#128070; Go to the top</a>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <footer>
+    
+        <%for(let i = 0;i<10;i++){%>
+            <section>
+                <a href="/<%=i%>"><%=i+1%></a>
+            </section>
+           
+            <%}%>
+    </footer>
+</body>
+</html>
